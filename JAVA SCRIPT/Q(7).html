@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+</head>
+<body>
+    <h3 id="set1Array"></h3>
+    <h3 id="set1Array"></h3>
+    <h3 id="set3Array"></h3>
+    <h3 id="set4Array"></h3>
+    <h3 id="set5Array"></h3>
+    <h3 id="set6Array"></h3>
+    <h3 id="set7Array"></h3>
+    <h3 id="set8Array"></h3>
+    <h3 id="set9Array"></h3>
+        <script>
+            let people = ["Greg", "Mary", "Devon", "James"];
+            var i=0
+            while(i<people.length)
+            {
+                console.log(people[i]);
+                i++;
+            }
+          people.shift();
+          document.getElementById("set1Array").innerHTML = people;
+          people.pop();
+          document.getElementById("set2Array").innerHTML = people;
+          people.unshift("Matt");
+          document.getElementById("set3Array").innerHTML = people;
+          people.push("Muralidharan")
+          document.getElementById("set4Array").innerHTML = people;
+          while(i<people.length)
+            {
+                console.log(people[i]);
+                if(people[i]=='Mary')
+                {
+                    i++;
+                    break;
+                }
+            }
+        document.getElementById("set5Array").innerHTML = people.slice(2);
+        document.getElementById("set6Array").innerHTML = people.indexOf("Mary");
+        document.getElementById("set7Array").innerHTML = people.indexOf("Foo");
+        people.splice(2,1,"Elizabeth", "Artie");
+        document.getElementById("set8Array").innerHTML = people;
+        let withBob ='Bob';
+       const con = people.concat(withBob)
+        document.getElementById("set9Array").innerHTML = con;
+     </script>
+</body>
+</html>

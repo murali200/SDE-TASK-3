@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+<body>
+        <h3 id="set1Array"></h3>
+        <h3 id="set2Array"></h3>
+        <h3 id="set3Array"></h3>
+        <script>
+            const cargoHold =["oxygen tanks","space suits", "parrot", "instruction manual", "meal packs", "slinky", "security blanket"];
+            cargoHold.splice(3,0,("keys"));
+            document.getElementById("set1Array").innerHTML = cargoHold;
+            cargoHold.splice(cargoHold.indexOf("instruction manual"),1);
+            document.getElementById("set2Array").innerHTML = cargoHold;
+            cargoHold.splice(2,3,"cat","fob","string cheese");
+            document.getElementById("set3Array").innerHTML = cargoHold;
+        </script>
+</body>
+</html>

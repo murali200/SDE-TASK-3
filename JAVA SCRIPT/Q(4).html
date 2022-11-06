@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+<body>
+    <h3 id="set1Array"></h3>
+    <h3 id="set2Array"></h3>
+    <h3 id="set3Array"></h3>
+    <h3 id="set4Array"></h3>
+    <h3 id="set5Array"></h3>
+    <script>
+        const holdCabinet1 = ["duct tape", "gum", 3.14, false, 6.022e23];
+        const holdCabinet2 = ["orange drink", "nerf toys", "camera", 42, "parsnip"];
+        const con12 = holdCabinet1.concat(holdCabinet2);
+        document.getElementById("set1Array").innerHTML = con12;
+        document.getElementById("set2Array").innerHTML  = holdCabinet1.slice(1);
+        document.getElementById("set3Array").innerHTML  = holdCabinet2.slice(1);
+        document.getElementById("set4Array").innerHTML  = holdCabinet1.reverse();
+        document.getElementById("set5Array").innerHTML  = holdCabinet2.sort();
+    </script>
+</body>
+</html>

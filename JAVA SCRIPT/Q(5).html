@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+</head>
+<body>
+        <h3 id="set1Array"></h3>
+        <h3 id="set2Array"></h3>
+        <h3 id="set3Array"></h3>
+        <h3 id="set4Array"></h3>
+        <h3 id="set5Array"></h3>
+        <h3 id="set6Array"></h3>
+        <h3 id="set7Array"></h3>
+        <h3 id="set8Array"></h3>
+        <h3 id="set9Array"></h3>
+        <script>
+            let str = 'In space, no one can hear you code.';
+            document.getElementById("set1Array").innerHTML = str.split();
+            document.getElementById("set2Array").innerHTML = str.split('e');
+            document.getElementById("set3Array").innerHTML = str.split(' ');
+            document.getElementById("set4Array").innerHTML = str.split('');
+            const arr = ['B','n', 'n', 5];
+            document.getElementById("set5Array").innerHTML = arr.join();
+            document.getElementById("set6Array").innerHTML = arr.join('a');
+            document.getElementById("set7Array").innerHTML = arr.join(' ');
+            document.getElementById("set8Array").innerHTML = arr.join('');
+            const  alpha = ['water','space suits','food','plasma sword','batteries'];
+            alpha.sort();
+            document.getElementById("set9Array").innerHTML = alpha.join(' ');
+        </script>
+</body>
+</html>
